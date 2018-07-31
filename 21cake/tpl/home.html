@@ -1,0 +1,163 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+
+
+<!--轮播广告-->
+<div class="slider-box">
+    <div test-Carousel></div>
+    <ul class="listContent">
+        <li ng-click="clickEvent(0)"></li>
+        <li ng-click="clickEvent(1)"></li>
+        <li ng-click="clickEvent(2)"></li>
+    </ul>
+</div>
+<!--中间内容-->
+<div class="content-box">
+    <div class="home-menu">
+        <a ng-click="gotoScroll($index)" ng-repeat="specialItems in specialItemsHome track by $index">
+            <img ng-src="{{specialItems.img_sm}}" alt=""/>
+        </a>
+
+    </div>
+    <!--新品专区-->
+    <div id="newScroll" class="home-colorful">
+        <h4 class="home-module-title">{{specialItemsHome[0].title}}
+            <sapn>/</sapn>
+            <span>{{specialItemsHome[0].title_sm}}</span>
+        </h4>
+        <div class="colorful-top-banner">
+            <a href="">
+                <img ng-src="{{specialItemsHome[0].img_lg}}" alt=""/>
+            </a>
+        </div>
+        <div class="color-product-list">
+            <div class="list-box">
+                <ul >
+                    <li ng-repeat="productItems in productDetailHome track by $index">
+                        <a href="#/{{productItems.url}}">
+                            <img ng-src="{{productItems.img}}"/>
+                        </a>
+                        <a >
+                            <h6>{{productItems.title}}</h6>
+                            <p>{{productItems.title_explain}}</p>
+                        </a>
+                        <div class="tag-list">
+                            <a href="">{{productItems.classify}}</a>
+                            <a href="">{{productItems.classify_1}}</a>
+                            <a href="">{{productItems.classify_2}}</a>
+                        </div>
+                        <div class="cart-info">
+                            <span>￥{{ productItems.s_price+"/"+ productItems.s_pound }}</span>磅
+                            <a class="add-cart" id="add-cart"  >{{productItems.s_text_6}}</a>
+                        </div>
+                        <div ng-if="isVsible" class="spec-detail">
+                            <div class="spec-title">{{productItems.s_price_1 | currency : '￥'}}/{{productItems.s_scale_1}}磅</div>
+                            <div class="spec-info">
+                                <a>{{productItems.s_scale}}磅<i></i></a>
+                                <a>{{productItems.s_scale_1}}磅<i></i></a>
+                                <a>{{productItems.s_scale_2}}磅<i></i></a>
+                                <a>{{productItems.s_scale_3}}磅<i></i></a>
+                            </div>
+                            <div class="buttons">
+                                <div class="button left buy-now" >{{productItems.s_text_5}}</div>
+                                <div class="button coffee right add-to-cart">{{productItems.s_text_6}}</div>
+                            </div>
+                        </div>
+                        <div ng-hide="isVisible" class="addcart-success">
+                            <div>
+                                <p><i></i>成功添加购物车</p>
+                                <a class="button" >查看购物车</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--人气专区-->
+    <div id="popularityScroll" class="home-colorful">
+        <h4 class="home-module-title">{{specialItemsHome[1].title}}
+            <sapn>/</sapn>
+            <span>{{specialItemsHome[1].title_sm}}</span>
+        </h4>
+        <div class="colorful-top-banner">
+            <a href="">
+                <img ng-src="{{specialItemsHome[1].img_lg}}" alt=""/>
+            </a>
+        </div>
+        <div class="color-product-list">
+            <div class="list-box">
+                <ul>
+                    <li ng-repeat="productItems in productDetailHome track by $index">
+                        <a href="#/{{productItems.url}}">
+                            <img ng-src="{{productItems.img}}"/>
+                        </a>
+                        <a >
+                            <h6>{{productItems.title}}</h6>
+                            <p>{{productItems.title_explain}}</p>
+                        </a>
+                        <div class="tag-list">
+                            <a href="">{{productItems.classify}}</a>
+                            <a href="">{{productItems.classify_1}}</a>
+                            <a href="">{{productItems.classify_2}}</a>
+                        </div>
+                        <div class="cart-info">
+                            <span>￥{{ productItems.s_price+"/"+ productItems.s_pound }}</span>磅
+                            <a href="" class="add-cart">{{productItems.s_text_6}}</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--活动专区-->
+    <div id="activeScroll" class="home-colorful home-activity">
+        <h4 class="home-module-title">{{specialItemsHome[3].title}}
+            <span>/</span>
+            <span>{{specialItemsHome[3].title_sm}}</span>
+        </h4>
+        <ul class="home-activity-content">
+            <li>
+                <a href="">
+                    <img ng-src="{{specialItemsHome[3].img_lg}}" alt=""/>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!--文章-->
+    <div class="home-magazine">
+        <h4 class="home-module-title">甘一客<span>/</span><span>文章</span>
+            <a href="">查看更多&nbsp;></a>
+        </h4>
+        <ul class="home-magazine-content">
+            <li>
+                <a href="">
+                    <img src="images/banner/7874cdea7ca4ab963c3e23571531bd51.jpg" alt=""/>
+                    <h4>三月刊·私享</h4>
+                    <p>
+                        <span></span>
+                        <span>阅读全文 >></span>
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="images/banner/05c51624b73e8be65ea0656008fc7140.jpg" alt=""/>
+                    <h4>二月刊·蛋糕·JPEG</h4>
+                    <p>
+                        <span></span>
+                        <span>阅读全文 >></span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+<div ng-include="'tpl/include/footer.html'"></div>

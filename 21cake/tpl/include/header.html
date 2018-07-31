@@ -1,0 +1,70 @@
+<!--header-->
+
+<div class="header-box">
+    <div class="header">
+        <!--导航菜单-->
+        <div class="header-nav">
+            <!--左侧导航菜单栏-->
+            <a href="#/home" class="header-logo">
+                <img ng-src="{{baseInfoHome[0].logo}}" alt=""/>
+            </a>
+            <ul class="nav-box">
+                <li>
+                    <a href="#/{{headerItemsHome[0].url}}">{{headerItemsHome[0].name}}</a >
+                </li>
+                <li><a href="#/{{headerItemsHome[1].url}}">{{headerItemsHome[1].name}}</a></li>
+                <li><a href="#/{{headerItemsHome[2].url}}">{{headerItemsHome[2].name}}</a></li>
+                <li><a href="#/{{headerItemsHome[3].url}}">{{headerItemsHome[3].name}}</a></li>
+                <li><a href="#/{{headerItemsHome[4].url}}">{{headerItemsHome[4].name}}</a></li>
+                <li><a href="#/{{headerItemsHome[5].url}}">{{headerItemsHome[5].name}}</a></li>
+            </ul>
+            <!--右侧导航菜单栏-->
+            <div class="right-city-user">
+                <a class="header-app">{{headerItemsHome[6].name}}
+                    <dl class="app-list">
+                        <dt>
+                            <img ng-src="images/icon/footer-erweima.png" alt=""/>
+                        </dt>
+                    </dl>
+                </a>
+                <div class="current-city">深圳
+                    <i></i>
+                    <ul class="current-city-list">
+                        <li>
+                            <a href="">上海</a>
+                        </li>
+                        <li>
+                            <a href="">广州</a>
+                        </li>
+                        <li>
+                            <a href="">北京</a>
+                        </li>
+                        <li>
+                            <a href="">杭州</a>
+                        </li>
+                        <li>
+                            <a href="">苏州</a>
+                        </li>
+                        <li>
+                            <a href="">天津</a>
+                        </li>
+                        <li>
+                            <a href="">无锡</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="" class="header-message">{{headerItemsHome[8].name}}</a>
+                <span class="not-login">
+                    <a href="#/login">{{headerItemsHome[9].name}}</a>/
+                    <a href="#/register">{{headerItemsHome[10].name}}</a>
+                </span>
+                <a href="#/cart" class="header-cart">
+                    <i></i>
+                    <span>2</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>

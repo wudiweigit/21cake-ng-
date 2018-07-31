@@ -1,0 +1,90 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<div class="login-background">
+    <div class="form-box">
+        <div class="form-login-box">
+            <div class="login-right-title">
+                <h2>账号密码登录</h2>
+                <h2>手机验证消息</h2>
+            </div>
+            <!--账号登录-->
+            <div style="display:none" class="form-content">
+                <form action="" methods="post">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="请输入账号"/>
+                        </li>
+                        <li>
+                            <input type="password" maxlength="32" placeholder="请输入密码"/>
+                        </li>
+                        <li class="err-text">
+                            <span><i></i> 用户名不能为空</span>
+                        </li>
+                        <li>
+                            <input class="login-button" type="submit" value="登录"/>
+                        </li>
+                    </ul>
+                    <div class="login-remember">
+                        <label>
+                            <input type="checkbox"/>&nbsp;记住账号
+                        </label>
+                        <a href="#/register">去注册</a>
+                        <a href="">忘记密码</a>
+                    </div>
+                </form>
+            </div>
+            <!--手机验证登录-->
+            <div  class="form-content">
+                <form method="post">
+                    <ul>
+                        <li class="form-control">
+                            <input type="text" maxlength="11" placeholder="请输入您的手机号"/>
+                            <i></i>
+                        </li>
+                        <li class="login-img-text">
+                            <input type="text" placeholder="请输入图片字符"/>
+                            <i></i>
+                            <img src="../images/icon/passport-verify.do" data-src="/passport-verify.do" class="fast-verify-code">
+                            <a href="#" class="fresh-verify-code-phone"></a>
+                        </li>
+                        <!--获取验证码-->
+                        <li class="login-mes-unm">
+                            <input type="text" placeholder="短信验证码">
+                            <a href="#">获取验证码</a>
+                        </li>
+                        <!-- 输入短信验证码结束 -->
+                        <li class="err-text">
+                            <span><i></i></span>
+                        </li>
+                        <li style="display: none" class="err-test">
+                            <span><i></i>手机号不能为空</span>
+                            <span><i></i>验证码错误</span>
+                            <span><i></i>请输入正确手机号</span>
+                        </li>
+                        <li>
+                            <input type="submit" class="login-button" vslue="登录"/>
+                        </li>
+                    </ul>
+                    <div class="login-remember">
+                        <label><input type="checkbox" >&nbsp;记住账号</label>
+                        <a href="">去注册</a>
+                        <a href="">忘记密码</a>
+                    </div>
+                </form>
+            </div>
+            <!--其他登录方式-->
+            <div class="login-bottom-other">
+                <div>
+                    <i></i><span>其他登录方式</span><i></i>
+                </div>
+                <a class="weixin-login"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div ng-include="'tpl/include/footer.html'"></div>

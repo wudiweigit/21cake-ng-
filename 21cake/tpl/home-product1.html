@@ -1,0 +1,159 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+
+
+<!--商品详情-->
+<div class="details-banner">
+    <div class="left-img-box">
+        <div class="video-box">
+            <img src="{{productDetailHome[0].img_detail_sm}}" alt=""/>
+        </div>
+    </div>
+    <div class="right-list">
+        <a class="top-banner"></a>
+        <ul id="bannerImgList">
+            <li>
+                <img src="{{productDetailHome[0].img_detail_sm}}" alt=""/>
+            </li>
+            <li>
+                <img src="{{productDetailHome[0].img_detail_sm_1}}" alt=""/>
+            </li>
+            <li>
+                <img src="{{productDetailHome[0].img_detail_sm_2}}" alt=""/>
+            </li>
+            <li>
+                <img src="{{productDetailHome[0].img_detail_sm_3}}" alt=""/>
+            </li>
+            <li>
+                <img src="{{productDetailHome[0].img_detail_sm_4}}" alt=""/>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--商品介绍-->
+<div class="product-box">
+    <div class="pro-details-cont">
+        <!--  左  -->
+        <div class="details-content-left">
+            <h1 class="pro-details-title">{{productDetailHome[0].title_detail_sm}}</h1>
+            <div class="sub-title">
+                <p></p>
+            </div>
+            <div class="pro-details-label">
+                <a href="">{{productDetailHome[0].classify}}</a>
+                <a href="">{{productDetailHome[0].classify_1}}</a>
+            </div>
+            <ul class="details-constituent">
+                <li>
+                    <img ng-src="{{productDetailHome[0].icon}}" alt=""/>
+                    <span>{{productDetailHome[0].icon_text}}</span>
+                </li>
+                <li>
+                    <img src="{{productDetailHome[0].icon_1}}" alt=""/>
+                    <span>{{productDetailHome[0].icon_text_1}}</span>
+                </li>
+                <li>
+                    <img src="{{productDetailHome[0].icon_2}}" alt=""/>
+                    <span>{{productDetailHome[0].icon_text_2}}</span>
+                </li>
+            </ul>
+            <div class="pro-details-explain">
+                {{productDetailHome[0].world}}<br>
+                {{productDetailHome[0].world_1}}<br>
+                {{productDetailHome[0].world_2}}<br>
+                {{productDetailHome[0].world_3}}<br>
+                {{productDetailHome[0].world_4}}
+            </div>
+            <ul class="details-distribution">
+                <li class="distribution-exist">
+                    <i></i>
+                    <span>{{productDetailHome[0].icon_text_3}}</span>
+                </li>
+                <li class="distribution-sweet" data-sweet="2">
+                    <i></i>
+                    <span style="margin-left:5px;">{{productDetailHome[0].icon_text_4}}</span>
+                    <span class="sweet-icon">
+                        <i class="active"></i>
+                        <i class="active"></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <!--  右  -->
+        <div class="details-content-right">
+
+            <div class="details-Specification">
+                <div class="outer-box">
+                    <div class="details-img-box">
+                        <img class="details-img" ng-src="{{productDetailHome[0].s_img_1}}" alt=""/>
+                        <ul class="details-options fl-left">
+                            <li class="details-options-size">
+                                <i></i>{{productDetailHome[0].s_text_1_1+'X'+ productDetailHome[0].s_text_1_1}}
+                            </li>
+                            <li class="details-options-unmber">
+                                <i></i>{{productDetailHome[0].s_text_2_1}}
+                            </li>
+                            <li class="details-options-laid">
+                                <i></i>{{productDetailHome[0].s_text_3_1}}
+                            </li>
+                            <li class="details-options-time">
+                                <i></i>{{productDetailHome[0].s_text_4_1}}
+                            </li>
+                        </ul>
+                        <!-- 价格显示 -->
+                        <a class="details-price">￥<span>{{productDetailHome[0].s_price_1}}</span>/{{productDetailHome[0].s_scale_1}}磅</a>
+                    </div>
+                    <!-- 选择蛋糕尺寸 -->
+                    <dl class="details-Specifications-size">
+                        <dt>{{productDetailHome[0].s_title}}</dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a data-productid="12822">{{productDetailHome[0].s_scale}}磅<i></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active" data-productid="12830">{{productDetailHome[0].s_scale_1}}磅<i></i></a>
+                                </li>
+                                <li>
+                                    <a data-productid="12838">{{productDetailHome[0].s_scale_2}}磅<i></i></a>
+                                </li>
+                                <li>
+                                    <a data-productid="12846">{{productDetailHome[0].s_scale_3}}磅<i></i></a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- 购物按钮 -->
+                <div class="details-button">
+                    <button class="details-but-buy" >{{productDetailHome[0].s_text_5}}</button>
+                    <button  class="details-but-cart detailsAddCart" >{{productDetailHome[0].s_text_6}}</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--详情图-->
+    <div class="details-introduction">
+        &nbsp;
+        &nbsp;
+        <img src="{{productDetailHome[0].img_detail_sm_4}}" alt=""/>
+        <img src="{{productDetailHome[0].img_detail_sm_5}}" alt=""/>
+        <img src="{{productDetailHome[0].img_detail_sm_6}}" alt=""/>
+        <img src="{{productDetailHome[0].img_detail_sm_7}}" alt=""/>
+        <img src="{{productDetailHome[0].img_detail_sm_8}}" alt=""/>
+        <img src="{{productDetailHome[0].img_detail_sm_9}}" alt=""/>
+        <img src="{{productDetailHome[0].img_detail_sm_10}}" alt=""/>
+    </div>
+
+
+    <div ng-include="'tpl/include/recommend.html'"></div>
+</div>
+
+
+
+<div ng-include="'tpl/include/footer.html'"></div>

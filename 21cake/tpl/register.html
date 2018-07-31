@@ -1,0 +1,65 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+
+<div class="login-background">
+    <div class="context-box">
+        <div class="form-login-box">
+            <div class="login-right-title">
+                <h2 class="regi-user">用户注册</h2>
+            </div>
+            <form id="sign-up-form">
+                <div class="form-content">
+                    <ul class="resiter-user">
+                        <li>
+                            <input type="text" autocomplete="off" maxlength="11" placeholder="请输入手机号码"/>
+                            <i></i>
+                        </li>
+                        <li>
+                            <input type="password" autocomplete="off" maxlength="20" placeholder="密码：请输入8~20字符，需要同时包含英文和数字"/>
+                            <i></i>
+                        </li>
+                        <li>
+                            <input type="password" autocomplete="off" maxlength="20" placeholder="确认密码"/>
+                            <i></i>
+                        </li>
+                        <li class="login-img-text">
+                            <input type="text" placeholder="请输入图片字符"/>
+                            <i></i>
+                            <img src="/passport-verify.do" data-src="/passport-verify.do" class="regImg">
+                            <a href="#" class="refresh-button"></a>
+                        </li>
+                        <li class="login-mes-unm">
+                            <input type="text" placeholder="短信验证码">
+                            <i></i>
+                            <a href="#" class="regiGetCode">获取验证码</a>
+                        </li>
+                        <li>
+                            <input type="text"  placeholder="请选择生日" class="hasDatepicker">
+                        </li>
+                        <li class="err-text">
+                            <span><i></i>两次密码输入不一致</span>
+                            <span><i></i>图形验证码错误</span>
+                            <span><i></i>短信验证码错误</span>
+                            <span><i></i>请输入正确的手机号码</span>
+                        </li>
+                        <li>
+                            <input type="submit" class="login-button" value="注册">
+                        </li>
+                    </ul>
+                </div>
+                <div class="reading-protocol">
+                    <label>
+                        <input type="checkbox" name="agree" checked="">&nbsp;已阅读并同意
+                    </label>
+                    <a href="/article-agreement-36.html">21客会员协议</a>和
+                    <a href="/article-policy-35.html">隐私保护政策</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div ng-include="'tpl/include/footer.html'"></div>

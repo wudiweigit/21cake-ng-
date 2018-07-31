@@ -1,0 +1,130 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+
+<div class="content-box">
+    <!--<div class="cart-not-pro">-->
+        <!--<img src="images/icon/cartempty.png" alt=""/>-->
+        <!--<span>您的购物车里还没有商品</span>-->
+        <!--<a href="#/cake">去购物 >></a>-->
+    <!--</div>-->
+    <!--商品信息-->
+    <div class="cart-goods-info cart-list">
+        <ul class="thead-ul">
+            <li class="goods-ti">商品</li>
+            <li class="birthday-card-ti">生日牌</li>
+            <li class="unit-price">单价</li>
+            <li class="number-ti">数量</li>
+            <li class="money-ti">金额</li>
+        </ul>
+        <div class="tbody-ul">
+            <table>
+                <tbody>
+                    <tr class="cart-object-item">
+                        <td class="goods-img">
+                            <a href="">
+                                <img src="images/product/sm/c9c2df9e4fac3c22d34b1de18c317a98.jpg" alt=""/>
+                            </a>
+                        </td>
+                        <td class="goods-cake">
+                            <div>
+                                <h4 class="cart-title">
+                                    <a>Bailey's Love Triangle  百利甜情人</a>
+                                </h4>
+                                <span class="goods-spec">规格：<span>2.0磅</span></span>
+                                <span class="goods-laid"><i></i>赠送<ins>&nbsp;10&nbsp;</ins>套餐具</span>
+                            </div>
+                        </td>
+                        <td class="select-birthday-td">
+                            <div class="select-birthday" data-spec="2.0磅" data-num="0">
+
+                                <div class="action-birthday_card">选择生日牌<i></i></div>
+                                <ul class="action-birthday-options" style="display: none;">
+                                    <li class="birthday-card-option">生日快乐</li>
+                                    <li class="birthday-card-option">Happy Birthday</li>
+                                    <li class="birthday-card-option">节日快乐</li>
+                                    <li class="brith_card_by_self">自定义</li>
+                                    <li style="display:none" class="action-input-container">
+                                        <input type="text" placeholder="可输入8个汉字或16个字符">
+                                        <input type="button" value="确定" class="action-birth-card-btn">
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="cart-unit-Price">¥298.00</td>
+                        <td class="number-li">
+                            <div class="number quantity-update">
+                                <input type="button" class="minus">
+                                <input type="text" class="quantity _quantity" value="1">
+                                <input type="button" class="plus">
+                            </div>
+                        </td>
+                        <td class="money">¥298.00</td>
+                        <td class="delete"><a href="#" data-indent="goods_12_2569"><i></i></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="7" class="tableware-list">
+                            <ul>
+                                <li class="tableware-row">
+                                    <img src="images/product/sm/peijian/3942d4bcfd0d09f48714a9f5b5997290.jpg">
+
+                                    <div class="right-title">
+                                        <h5>方形蜡烛<span>配件</span></h5>
+                                        <span>￥5.00</span>
+                                        <a href="#" class="action-add-to-cart" title="加入购物车">
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="tableware-row">
+                                    <img src="images/product/sm/peijian/84ea7dbb64e18846e0bcdf22172671ae.jpg">
+                                    <div class="right-title">
+                                        <h5>餐具套餐<span>配件</span></h5>
+                                        <span>￥0.50</span>
+                                        <a href="#" class="action-add-to-cart" title="加入购物车">
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/product/sm/peijian/eb6066c7d9c25ca55e338ee611c897da.jpg" >
+                                    <div class="right-title">
+                                        <h5>拷贝蜡烛-爱尔兰咖啡</h5>
+                                        <span>￥8.00/个</span>
+                                        <a href="#" class="action-add-to-cart" title="加入购物车">
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="images/product/sm/peijian/0ca8d77861d02e3bad9f2a421f4d1eb5.jpg" alt="设计师竹纸扇">
+                                    <div class="right-title">
+                                        <h5>设计师竹纸扇</h5>
+                                        <span>￥18.00/把</span>
+                                        <a href="#" class="action-add-to-cart" title="加入购物车">
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cart-submit">
+            <a href="#" class="cart-submit-empty"><i></i>全部清空</a>
+            <ul class="cart-total-detail">
+                <li>商品金额：¥ 894.00</li>
+                <li>配送费：¥ 0.00</li>
+                <li>活动优惠：¥ 0.00</li>
+            </ul>
+            <div class="cart-total"><span>合计：¥<span>894.00</span></span></div>
+            <span class="cart-balance">订单已满￥100元,享免费配送服务</span>
+            <div class="cart-submit-button">
+                <a id="action-submit-btn">去结算</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div ng-include="'tpl/include/footer.html'"></div>

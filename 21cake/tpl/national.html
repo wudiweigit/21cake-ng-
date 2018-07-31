@@ -1,0 +1,133 @@
+<div ng-include="'tpl/include/header.html'"></div>
+
+<div class="national-top-banner"></div>
+<div class="content-box">
+    <ul class="national-pro-list">
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+        <li>
+            <a>
+                <img src="images/product/sm/f3678383d3cbfd38184160e8656c9773.jpg">
+                <h3>巴西挂耳咖啡</h3>
+                <p>¥10.00/份</p>
+            </a>
+            <a class="button ">订购</a>
+        </li>
+    </ul>
+    <div class="order-info">
+        <h2>订单信息</h2>
+        <form id="create-order" method="post">
+            <div class="order-info-content">
+                <div class="order-info-left">
+                    <ul>
+                        <li>
+                            <label>收货人:</label>
+                            <input type="text" name="consignee" placeholder="收货人姓名"/>
+                            <span>请输入收货人姓名</span>
+                        </li>
+                        <li>
+                            <label>联系方式：</label>
+                            <input type="text" name="mobile" placeholder="收货人联系方式" value="">
+                            <span>请输入联系方式</span>
+                        </li>
+                        <li class="city-list">
+                            <label> 城市：</label>
+                            <select name="province" id="province"><option value="">省</option><option value="北京">北京</option><option value="上海">上海</option><option value="广东">广东</option><option value="江苏">江苏</option><option value="浙江">浙江</option><option value="天津">天津</option><option value="安徽">安徽</option><option value="宁夏">宁夏</option><option value="青海">青海</option><option value="山东">山东</option><option value="山西">山西</option><option value="陕西">陕西</option><option value="四川">四川</option><option value="西藏">西藏</option><option value="新疆">新疆</option><option value="云南">云南</option><option value="香港">香港</option><option value="澳门">澳门</option><option value="内蒙古">内蒙古</option><option value="辽宁">辽宁</option><option value="江西">江西</option><option value="福建">福建</option><option value="甘肃">甘肃</option><option value="重庆">重庆</option><option value="广西">广西</option><option value="贵州">贵州</option><option value="海南">海南</option><option value="河北">河北</option><option value="河南">河南</option><option value="黑龙江">黑龙江</option><option value="湖北">湖北</option><option value="湖南">湖南</option><option value="吉林">吉林</option><option value="台湾">台湾</option></select></select>
+                            <select name="city" id="city">
+                                <option value="">市</option>
+                            </select>
+                            <select name="county" id="county">
+                                <option value="">区/县</option>
+                            </select>
+                            <span id="addrss-select-tips">请选择所在城市</span>
+                            <input type="hidden" name="regionId" id="region-id" value="">
+                        </li>
+                        <li class="address-list">
+                            <label>详细地址：</label>
+                            <textarea name="address" placeholder="请输入详细地址"></textarea>
+                            <span id="addressList">请填写配送信息</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="order-info-right">
+                    <p>商品金额：¥<span id="item_cost">0.00</span></p>
+                    <p>配送费：¥<span id="item_ship_fee">0.00</span></p>
+                    <div class="total-amount">
+                        <p>合计：¥<span id="total_amount">0.00</span></p>
+                    </div>
+                    <p class="last-p">发货及到货时间参考产品详情页说明</p>
+                    <div class="total-button">
+                        <input type="submit" value="在线付款" class="button">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+<div ng-include="'tpl/include/footer.html'"></div>
